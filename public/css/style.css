@@ -1,0 +1,162 @@
+body {
+    text-align: center;
+}
+
+.bg-text {
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  text-align: center;
+  position: absolute;
+  top: 8px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#home-image {
+  background-image: url('../imgs/veggies.jpg');
+  filter: blur(6px);
+  height: 220px;
+}
+
+#salsa-image{
+  background-image: url('../imgs/salsa.jpeg');
+  filter: blur(6px);
+  height: 220px;
+}
+
+#guac-image{
+  background-image: url('../imgs/guac.jpg');
+  filter: blur(6px);
+  height: 220px;
+}
+
+#queso-image {
+  background-image: url('../imgs/queso.jpeg');
+  filter: blur(6px);
+  height: 220px;
+}
+
+
+.nav {
+    display: inline-block;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .nav li {
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+    text-align: center;
+  }
+   
+  .nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+  }
+   
+  .nav a:hover {
+    background-color: #005f5f;
+  }
+   
+   
+  @media screen and (min-width: 800px) {
+    .nav li {
+      width: 200px;
+      border-bottom: none;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+    }
+   
+    /* Option 1 - Display Inline */
+    .nav li {
+      display: inline-block;
+      margin-right: -4px;
+    }
+   
+  }
+
+
+  ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+ol {
+    text-align: center;
+    list-style-position: inside; 
+}
+
+
+
+#salsacolumn {
+    background-image: url('../imgs/salsa2.jpg');
+}
+
+#guaccolumn {
+    background-image: url('../imgs/guac2.jpg');
+}
+
+#quesocolumn {
+    background-image: url('../imgs/queso2.jpg');
+}
+
+.flex-container ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex-container ul> div {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+  }
+
+  #chipheader {
+      padding: 20px;
+  }
+
+
+.servings > button, #post-rating {
+  background-color:  #444;
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 5px 14px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#rating-label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0 8px;
+  margin-bottom: 20px;
+}
+
+
+
+
