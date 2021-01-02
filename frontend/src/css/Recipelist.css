@@ -39,3 +39,20 @@ ol {
 #quesocolumn {
   background-image: url('../imgs/queso2.jpg');
 }
+
+.link-collection > a {
+  color: #8500FF;
+  line-height: 26px;
+}
+
+.link-collection {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width: 900px) {
+  .link-collection {
+      display: grid;
+      grid-template-columns: auto auto;
+  }
+}

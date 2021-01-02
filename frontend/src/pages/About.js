@@ -22,10 +22,8 @@ function About(){
                 Sometimes there were cucumbers, sometimes not. But basically it was just
                 a pile of lettuce with no dressing. That's when I knew I had to start cooking
                 for myself.</p>
-                <figure>
-                    <img src="imgs/lettuce.jpg" height="250" />
+                    <img src="../imgs/lettuce.jpg" height="250" />
                     <figcaption>Pretty much my lunch every day.</figcaption>
-                </figure>
                 <h3>Now</h3>
             <p>Now, as a college student, I understand my host mom's struggle. I am short on 
                 both money and time, so convinience is my top priority. I have figured out how to 

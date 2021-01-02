@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const Recipe = require('./models/recipe-schema');
 
 
-mongoose.connect("mongodb+srv://dbUser:dbUserPassword@cluster0.cy6ha.mongodb.net/<dbname>?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://dbUser:dbUserPassword@cluster0.cy6ha.mongodb.net/bootcamp?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,

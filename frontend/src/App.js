@@ -3,6 +3,7 @@ import Header from './parts/Header.js';
 import Recipelist from './parts/Recipelist.js';
 import About from './pages/About.js';
 import Cart from './parts/Cart.js';
+import Recipe from './pages/Recipe.js';
 import './css/App.css';
 
 import React from 'react';
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route exact path='/about'> 
           <About />
+        </Route>
+        <Route path='/recipe'> 
+          <Recipe />
         </Route>
       </Switch>
     </div>
