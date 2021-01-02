@@ -1,0 +1,47 @@
+#home-image {
+    background-image: url('../imgs/veggies.jpg');
+    filter: blur(6px);
+    height: 220px;
+  }
+
+  .flex-container ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex-container ul> div {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+  }
+
+  #chipheader {
+      padding: 20px;
+  }
+
+  ol {
+    text-align: center;
+    list-style-position: inside; 
+}
+
+#salsacolumn {
+    background-image: url('../imgs/salsa2.jpg');
+}
+
+#guaccolumn {
+    background-image: url('../imgs/guac2.jpg');
+}
+
+#quesocolumn {
+    background-image: url('../imgs/queso2.jpg');
+}
+
+
+.link-collection {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
