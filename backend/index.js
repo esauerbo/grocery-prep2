@@ -45,6 +45,6 @@ app.post("/api/rating", async (req, res) =>{
 
 
 
-app.listen(5000, function(){
-  console.log("Started on port 5000")
+app.listen(3004, function(){
+  console.log("Started on port 3004")
 })
