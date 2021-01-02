@@ -35,6 +35,7 @@ render() {
                     {this.state.list && this.state.list.map(item => {
                         const id = item._id;
                         const title = item.title;
+                        console.log("recipelist "+ id + " " + title);
                         return <Link to={'/recipe/#' + id}>{title}</Link>;
                     })}
                 </div>

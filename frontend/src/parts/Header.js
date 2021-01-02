@@ -3,8 +3,12 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-<header>
-        <h1>Grocery Prep</h1>
+
+<div class="container">
+  <div id="home-image"></div>
+  <div class="bg-text">
+    <header>
+        <h1 >Grocery Prep</h1>
         <div class="nav">
           <ul>
                <Link to="/"> Home </Link>
@@ -12,7 +16,15 @@ function Header() {
                <Link to="/about"> About the Chef </Link>
           </ul>
         </div>
-      </header>
+        </header>
+        </div>
+        </div>
+
+      
+
+  
+
+
   );
 }
 

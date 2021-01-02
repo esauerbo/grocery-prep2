@@ -31,10 +31,9 @@ app.get('/api/recipe', async (req, res) => {
 app.get('/api/recipe/:name', async (req, res) => {
   res.status(200)
   let name = req.params.name;
-  console.log(name + " recipe")
   let recipe = await Recipe.find({
-    "title" : name
-  });
+    "_id" : name
+  }); 
   res.json(recipe);
 })
 

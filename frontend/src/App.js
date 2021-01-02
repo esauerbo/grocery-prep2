@@ -9,8 +9,29 @@ import './css/App.css';
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { cart: [] };
+  }
 
-function App() {
+  updateCart = (items) => {
+    const cart = this.state.cart;
+    for (const item in items) {
+      if (cart[item] === undefined) {
+        cart[item] = +(items[item]);
+      } else {
+        cart[item] += +(items[item]);
+      }
+    }
+
+    this.setState({cart: cart});
+  }
+
+  emptyCart = () => this.setState({ cart: [] });
+
+
+render() {
   return (
     <BrowserRouter>
     <div className="App">
@@ -18,18 +39,20 @@ function App() {
       <Switch>
         <Route exact path='/'> 
           <Recipelist />
-          <Cart />
+          <Cart cart={this.state.cart} emptyCart={this.emptyCart} />
         </Route>
         <Route exact path='/about'> 
           <About />
         </Route>
         <Route path='/recipe'> 
-          <Recipe />
+        <Recipe updateCart={this.updateCart} />
+          <Cart cart={this.state.cart} emptyCart={this.emptyCart} />
         </Route>
       </Switch>
     </div>
     </BrowserRouter>
   );
+}
 }
 
 export default App;
