@@ -11,6 +11,12 @@ mongoose.connect("mongodb+srv://dbUser:dbUserPassword@cluster0.cy6ha.mongodb.net
   useCreateIndex: true
 }).then(() => console.log('Connected to MongoDB'))
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.use(express.static(__dirname + "/../public"))
 
 app.use('/files', express.static('public'))

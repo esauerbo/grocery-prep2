@@ -1,6 +1,8 @@
 
 import Header from './parts/Header.js';
 import Recipelist from './parts/Recipelist.js';
+import About from './pages/About.js';
+import Cart from './parts/Cart.js';
 import './css/App.css';
 
 import React from 'react';
@@ -15,6 +17,10 @@ function App() {
       <Switch>
         <Route exact path='/'> 
           <Recipelist />
+          <Cart />
+        </Route>
+        <Route exact path='/about'> 
+          <About />
         </Route>
       </Switch>
     </div>
