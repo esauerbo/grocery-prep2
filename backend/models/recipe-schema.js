@@ -11,8 +11,8 @@ const recipeSchema = new mongoose.Schema({
         of: Number
     },
     "instructions": [Array]
-}, {collection: 'Recipes'})
+}, {collection: 'recipes'})
 
-const Recipe = mongoose.model("Recipes", recipeSchema);
+const Recipe = mongoose.model("recipes", recipeSchema);
 
 module.exports = Recipe;

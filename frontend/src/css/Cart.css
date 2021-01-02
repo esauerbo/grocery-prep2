@@ -1,0 +1,14 @@
+#cart {
+    padding-bottom: 50px;
+}
+
+h1{
+background-color: azure;
+}
+
+button{
+    background-color: #0078FF;
+    border: none;   
+    font-size: 14px;
+    padding: 5px 14px;
+}

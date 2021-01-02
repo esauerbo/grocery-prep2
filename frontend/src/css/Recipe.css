@@ -1,0 +1,32 @@
+#recipe{
+    align-items: center;
+}
+
+
+
+.servings > button, #post-rating, #add-to-cart {
+    background-color: #0078FF;
+    border: none;   
+    font-size: 14px;
+    padding: 5px 14px;
+}
+
+li {
+    margin: 4px 0;
+}
+
+
+#ratings {
+    font-size: 18px;
+}
+
+#rating-label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0 8px;
+}
+
+#serving-count {
+    margin: 0 4px;
+}
