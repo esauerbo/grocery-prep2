@@ -12,7 +12,6 @@ function Header() {
         <div class="nav">
           <ul>
                <Link to="/"> Home </Link>
-               <Link to="/random"> Random Recipe </Link>
                <Link to="/about"> About the Chef </Link>
           </ul>
         </div>
