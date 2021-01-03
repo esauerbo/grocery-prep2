@@ -40,18 +40,18 @@ ol {
   background-image: url('../imgs/queso2.jpg');
 }
 
-.link-collection > a {
+.recipes > a {
   color: #8500FF;
   line-height: 26px;
 }
 
-.link-collection {
+.recipes {
   display: grid;
   grid-template-columns: auto auto auto;
 }
 
 @media screen and (max-width: 900px) {
-  .link-collection {
+  .recipes {
       display: grid;
       grid-template-columns: auto auto;
   }

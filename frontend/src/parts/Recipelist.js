@@ -31,7 +31,7 @@ render() {
         enjoy!</p>
     <h1>Chip Dips</h1>
     <h2>Recipes</h2>
-                <div className='link-collection'>
+                <div className='recipes'>
                     {this.state.list && this.state.list.map(item => {
                         const id = item._id;
                         const title = item.title;
